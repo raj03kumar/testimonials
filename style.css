@@ -1,0 +1,78 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+}
+
+h1{
+    margin: 1.5em;
+    letter-spacing: 0.3em;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-img{
+    width: 100%;
+    height: 100%;
+    min-height: 18em;
+    background-image: url(img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+.testimonials .container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonial{
+    padding: 2.5em 2.5em 1.5em 2.5em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.testimonial h3{
+    margin: 0.5em 0;
+}
+
+.quote{
+    margin: 1em 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    max-width: 400px;
+    line-height: 1.5em;
+}
+
+/* Media queries for responsive websites */
+@media screen and (max-width: 700px) {
+    .quote{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+}
